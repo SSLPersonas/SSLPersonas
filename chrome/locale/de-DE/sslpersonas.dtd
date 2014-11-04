@@ -1,0 +1,36 @@
+<!-- for: sslpersonas -->
+<!ENTITY menulabel "SSLPersonas">
+<!ENTITY settingslabel "Einstellungen">
+<!ENTITY aboutlabel "Informationen">
+<!ENTITY surveylabel "Nutzerumfrage">
+
+<!-- for: settings -->
+<!ENTITY settings.title "SSLPersonas Einstellungen">
+<!ENTITY settings.overridecerterror.label "SSL Warnungen ersetzen">
+<!ENTITY settings.overridecerterror.description "Wenn Sie diese Funktion aktivieren, blendet
+	SSLPersonas verbesserte Warnungen ein, sobald ein Problem mit den Server Zertifikaten
+	besteht">
+	
+<!ENTITY settings.tabtitles.personas "Personas">	
+<!ENTITY settings.tabtitles.warnings "Zertifikat Warnungen">
+	
+<!ENTITY settings.permanentexception.label "Ausnahmen dauerhaft merken">
+<!ENTITY settings.permanentexception.description "Wenn Sie diese Funktion aktivieren,
+	merkt sich Firefox die Webseiten, die Sie trotz Warnmeldung besuchen.">
+	
+<!ENTITY settings.personas.description "Hier können Sie Ihre eigenen Personas für jede Art von Verschlüsselung wählen. 
+Tragen Sie dazu bitten den Link (URL, z.B. http://www.getpersonas.com/de/persona/253827) in das entsprechende Eingabefeld ein und klicken Sie auf Speichern. 
+Sie können alles auch wieder auf das standardmäßige Persona zurücksetzen.">
+
+<!ENTITY settings.buttons.save "Speichern">
+
+<!ENTITY settings.buttons.restore "Persona zurücksetzen">
+<!ENTITY settings.EVTextfield.label "EV-SSL Persona URL (beste Verschlüsselung - grün)">
+<!ENTITY settings.DVTextfield.label "Standard SSL Persona URL (normale Verschlüsselung - blau)">
+<!ENTITY settings.BrokenTextfield.label "Broken SSL Persona URL (nur teilweise verschlüsselt - orange)">
+
+
+
+<!-- for: about -->
+<!ENTITY about.thesis "Dieses Addon wurde im Rahmen einer Bachelor-Arbeit an der 
+	Ludwig Maximilians Universität München erstellt.">

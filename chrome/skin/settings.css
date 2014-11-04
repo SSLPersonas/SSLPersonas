@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+#settings_description{
+	width: 600px;
+}
+
+#personas_tabpanel{
+	height: 180px;
+}
+.line_item{
+	border-bottom: 1px solid gray;
+}

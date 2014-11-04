@@ -1,0 +1,35 @@
+<!-- for: sslpersonas -->
+<!ENTITY menulabel "SSLPersonas">
+<!ENTITY settingslabel "Settings">
+<!ENTITY aboutlabel "About...">
+<!ENTITY surveylabel "SURVEY">
+
+<!-- for: settings -->
+<!ENTITY settings.title "SSLPersonas Settings">
+<!ENTITY settings.overridecerterror.label "Replace certificate error warnings">
+
+<!ENTITY settings.tabtitles.personas "Personas">	
+<!ENTITY settings.tabtitles.warnings "Warnings">
+
+	
+<!ENTITY settings.overridecerterror.description "Enabling this option makes SSLPersonas display
+	improved warning messages, as soon as there is a problem concerning website server certificates.">
+	
+<!ENTITY settings.permanentexception.label "Make decisions permanent">
+
+<!ENTITY settings.permanentexception.description "If checked, Firefox will remember the 
+	websites you visited in spite of a warning message.">
+
+<!ENTITY settings.personas.description "You can pick your custom SSL Personas here. 
+Please enter the link (URL, e.g. http://www.getpersonas.com/de/persona/253827) of your chosen Persona in the according Textbox and click save. You can also restore the 
+default Persona.">
+
+<!ENTITY settings.buttons.save "Save">
+<!ENTITY settings.buttons.restore "Restore Default Persona">
+
+<!ENTITY settings.EVTextfield.label "EV-SSL Persona URL (strongest encryption - green)">
+<!ENTITY settings.DVTextfield.label "Standard SSL Persona URL (normal encryption - blue)">
+<!ENTITY settings.BrokenTextfield.label "Broken SSL Persona URL (partial encryption - orange)">
+
+<!-- for: about -->
+<!ENTITY about.thesis "This Add-on is the result of a Bachelor Thesis at Ludwig Maximilians University in Munich, Germany.">

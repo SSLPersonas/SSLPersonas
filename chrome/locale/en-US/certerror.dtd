@@ -1,0 +1,68 @@
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+
+<!-- These strings are used by Firefox's custom about:certerror page,
+a replacement for the standard security certificate errors produced
+by NSS/PSM via netError.xhtml. -->
+
+<!ENTITY certerror.pagetitle  "Warning">
+<!ENTITY certerror.longpagetitle "Did you really want to go to <b class='actualLocation'>#1</b>?">
+
+
+<!ENTITY certerror.baddomain.longpagetitle "<b class='actualLocation'>#1</b> cannot properly identify itself.">
+<!ENTITY certerror.unknownissuer.longpagetitle "Is <b class='actualLocation'>#1</b> really the site you were looking for?">
+<!ENTITY certerror.untrustedissuer.longpagetitle "<b class='actualLocation'>#1</b> is considered dangerous.">
+
+
+<!ENTITY certerror.pagepreviewheading "<span class='pagepreviewheading'>Page Preview:</span>">
+<!ENTITY certerror.pagepreviewloading "<span class='pagepreviewloading'>A preview of the current website is being generated.</span>">
+
+<!-- Localization note (certerror.introPara1) -->
+<!ENTITY certerror.introPara1 "There was a problem with the identification of <b class='actualLocation'>#1</b>">
+<!ENTITY certerror.baddomain.introPara1 "&brandShortName; tried to reach <b class='actualLocation'>#1</b>,
+          	but got a response from <b class='certLocation'>#2</b> instead.
+          	In some cases this can be a security risk, as this is a common indicator of internet fraud.
+          	Please note that the addresses of secure sites often have to start with &quot;www.&quot; ">
+<!ENTITY certerror.unknownissuer.introPara1 "The validity of <b class='actualLocation'>#1</b> could not be checked,
+	          though your connection to that site is secure.">
+<!ENTITY certerror.untrustedissuer.introPara1 "<b class='actualLocation'>#1</b> was certified by a company, 
+	that &brandShortName; does not recognize as a trustworthy authority.">
+
+<!ENTITY certerror.whatShouldIDo.heading "What should I do?">
+<!ENTITY certerror.suggestion.baddomain "<div>Go to <span id='suggestion_certLink'></span>
+            	to avoid risks and to display the secure site.</div>">
+<!ENTITY certerror.suggestion.unknownissuer "<div>If you knowingly attempted to visit this website, you can continue.</div>">
+<!ENTITY certerror.suggestion.untrustedissuer "<div>You should leave this site, except you trust the authority wich issued the certificate.</div>">
+
+
+<!ENTITY certerror.whatShouldIDo.content "<div>If you usually do not have any problems when visitig this site, this could mean there is an attempted fraud. In this case, you should not continue.</div>">
+<!ENTITY certerror.getMeOutOfHere.label "Leave">
+<!ENTITY certerror.addException.label "Continue to site">
+
+<!ENTITY certerror.moreInformation "Further information">
+
+<!ENTITY certerror.dangers "Whenever you visit a <b>secure</b> website, it identifies itself with a certificate,
+		to prove that your connection to that site has not been manipulated by an attacker.
+		This certificate is issued by a trustworthy authority and it contains some information on the identity of the site,
+		like for example the name of the person or company that runs this site.
+		Firefox checks whether all information from the certificate is correct and if it corresponds 
+		to the currently visited website.
+		">
+
+<!ENTITY certerror.dangers.baddomain "In the case of <b class='actualLocation'>#1</b> it could mean, that 
+		an attacker stole the certificate of <b class='certLocation'>#2</b> to 
+		obtain access to your private data, like passwords or email-addresses. 
+		Still, this is a very unlikely case. More often this results from spelling mistakes, for example 
+		https://amazon.com instead of https://<b>www.</b>amazon.com.">
+  	
+<!ENTITY certerror.dangers.unknownissuer "In the case of <b class='actualLocation'>#1</b> it could mean, that an
+		attacker tries to inspire confidence by using a self-signed certificate. This certificate has not been verified 
+		by any authority though and can therefore indicate a security risk. However many educational institutions like
+		universities use self-signed certificates that are perfectly secure.">
+
+<!ENTITY certerror.dangers.untrustedissuer "This website uses a certificate which was issued by a company
+		that &brandShortName; considers dangerous. Sometimes this means that the company was 
+		involved with suspicious/fraudulent websites before.">
+         	
+<!ENTITY certerror.errordescription "Quoted Error Message: <br />">

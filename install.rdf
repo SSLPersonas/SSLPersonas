@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="rdf:#$zalB83"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.6"
+                   em:maxVersion="4.0.*" />
+  <Description about="urn:mozilla:install-manifest"
+                   em:id="sslPersonas@tobitobi.de"
+                   em:name="sslpersonas"
+                   em:version="1.0.3"
+                   em:creator="Tobi Stockinger"
+                   em:description="This Extension will change the Firefox Persona Theme whenever a website uses SSL."
+                   em:homepageURL="http://sslpersonas.tobitobi.de"
+                   em:iconURL="chrome://sslpersonas/skin/images/icon.jpg"
+                   em:optionsURL="chrome://sslpersonas/content/prefwindow.xul"
+                   em:aboutURL="chrome://sslpersonas/content/about.xul">
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
+        <em:minVersion>3.6</em:minVersion>
+        <em:maxVersion>7.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

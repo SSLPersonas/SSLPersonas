@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialog SYSTEM "chrome://sslpersonas/locale/sslpersonas.dtd" >
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://sslpersonas/skin/settings.css" type="text/css"?>
+   
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="SSLP_settings.dialogAccepted()" ondialogcancel=""
+	onload="SSLP_settings.onLoad()"
+    title="&settings.title;"
+	> 
+	<script src="chrome://sslpersonas/content/settingshandler.js"  />
+  <prefpane id="saveoptions" label="Backups">
+    <preferences>
+      <preference id="permanent_exception" name="extensions.sslpersonas.permanent_exception" type="bool" />
+      <preference id="override_certerror" name="extensions.sslpersonas.override_certerror" type="bool" />
+      <preference id="toplevel" name="extensions.sslpersonas.toplevel" type="string" />
+      <preference id="customToplevelUrl" name="extensions.sslpersonas.customToplevelUrl" type="string" />
+      <preference id="customStandardUrl" name="extensions.sslpersonas.customStandardUrl" type="string" />
+      <preference id="customBrokenUrl" name="extensions.sslpersonas.customBrokenUrl" type="string" />
+    </preferences>
+    <tabbox id="sslp_settings_tabbox">
+	  <tabs>
+	    <tab label="&settings.tabtitles.personas;" />
+	    <tab label="&settings.tabtitles.warnings;"/>
+	  </tabs>
+	  <tabpanels>
+	    <tabpanel id="personas_tabpanel">
+	    	<vbox>
+	    		<box><description id="settings_description">&settings.personas.description;</description></box>
+	    		<spacer flex="1" />
+	    		<hbox class="line_item">
+	    			<label value="&settings.EVTextfield.label;" flex="3" />
+	    			<textbox id="toplevelURL" preference="customToplevelUrl"></textbox>
+	    			<button label="&settings.buttons.save;" id="toplevelChoice" oncommand="SSLP_settings.selectPersona(event)" />
+	    			<button label="&settings.buttons.restore;" id="toplevelRestore" oncommand="SSLP_settings.restorePersona(event)" />
+	    		</hbox>
+	    		<hbox class="line_item">
+	    			<label value="&settings.DVTextfield.label;" flex="3" />
+	    			<textbox id="standardURL" preference="customStandardUrl"></textbox>
+	    			<button label="&settings.buttons.save;" id="standardChoice" oncommand="SSLP_settings.selectPersona(event)" />
+	    			<button label="&settings.buttons.restore;" id="standardRestore" oncommand="SSLP_settings.restorePersona(event)" />
+	    		</hbox>
+	    		<hbox class="line_item">
+	    			<label value="&settings.BrokenTextfield.label;" flex="3" />
+	    			<textbox id="brokenURL" preference="customBrokenUrl"></textbox>
+	    			<button label="&settings.buttons.save;" id="brokenChoice" oncommand="SSLP_settings.selectPersona(event)" />
+	    			<button label="&settings.buttons.restore;" id="brokenRestore" oncommand="SSLP_settings.restorePersona(event)" />
+	    		</hbox>
+	    		<image id="ajaxloader" src="chrome://sslpersonas/skin/images/ajax-loader.gif" style="display:none" />
+	    	</vbox>
+	    </tabpanel>
+	    <tabpanel>
+		  	<vbox>
+		    	<description id="sslp_override_help" flex="1">&settings.overridecerterror.description;</description>
+		    	<checkbox id="cb_override_certerror" label="&settings.overridecerterror.label;" 
+		    		preference="override_certerror" />
+		    	<separator class="groove" />
+		    	<description id="sslp_permanent_help" flex="1">&settings.permanentexception.description;</description>
+		    	<checkbox id="cb_permanent_exception" label="&settings.permanentexception.label;" 
+		    		preference="permanent_exception" />
+		    </vbox>
+		</tabpanel>
+	  </tabpanels>
+	</tabbox>
+    
+  </prefpane>
+</prefwindow>

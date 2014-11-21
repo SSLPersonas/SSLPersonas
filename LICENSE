@@ -2,6 +2,15 @@ The MIT License (MIT)
 
 Copyright (c) 2014 Tobi Stockinger
 
+You are free to use and modify the Plugin as long as you credit my work.
+If you are a researcher experimenting with SSLPersonas, please cite:
+
+Maurer, M. E., De Luca, A., & Stockinger, T. (2011).
+Shining chrome: using web browser personas to enhance SSL certificate visualization.
+In Human-Computer Interaction–INTERACT 2011 (pp. 44-51). Springer Berlin Heidelberg.
+
+
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

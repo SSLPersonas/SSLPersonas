@@ -1,0 +1,39 @@
+@import 'colors';
+@contentWidth : 500px;
+
+html,body{
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+#container{
+
+  #header{
+
+  }
+
+  .content{
+    width: @contentWidth;
+    margin:auto;
+  }
+
+  .section{
+    min-height: 600px;
+    &.general{
+
+    }
+    &.extendedValidation{
+      background-color: @green;
+    }
+    &.standardValidation{
+      background-color: @blue;
+    }
+    &.brokenCertificate{
+      background-color: @purple;
+    }
+    &.insecureConnection{
+      background-color: @red;
+    }
+  }
+}

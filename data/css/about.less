@@ -1,5 +1,5 @@
 @import 'colors';
-@contentWidth : 500px;
+@contentWidth : 40%;
 
 html,body{
   padding: 0;
@@ -8,26 +8,41 @@ html,body{
 }
 
 #container{
+  position: relative;
+  color: #333;
 
   #header{
-
-  }
-
-  .content{
     width: @contentWidth;
-    margin:auto;
+    margin: auto;
+    h1{
+      text-align: center;
+      font-size: 300%;
+    }
   }
+
+
 
   .section{
-    min-height: 600px;
-    &.general{
+    width: 100%;
+    min-height: 430px;
+    margin: 0;
+    padding: 1% 0;
 
+    &.general{
+      min-height:0;
+      .content{
+        color: #333;
+      }
+    }
+    .white{
+      color: white;
     }
     &.extendedValidation{
       background-color: @green;
     }
     &.standardValidation{
       background-color: @blue;
+
     }
     &.brokenCertificate{
       background-color: @purple;
@@ -35,5 +50,41 @@ html,body{
     &.insecureConnection{
       background-color: @red;
     }
+
+    .content{
+      width: @contentWidth;
+      min-width: 500px;
+      margin: auto;
+      height: 100%;
+      .center;
+
+      img{
+        &.screenshot{
+          width: 100%;
+          margin: auto;
+        }
+      }
+      h2{
+        margin: 0;
+        text-align: center;
+      }
+      .text{
+        text-align: justify;
+        padding-left: 5%; // matches the screenshot border
+        padding-right: 5%; // approx. screenshot right border;
+        .highlight{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .clear{
+    clear:both;
+  }
+  .center{
+    text-align:center;
+  }
+  .left{
+    text-align: left;
   }
 }

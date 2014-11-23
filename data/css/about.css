@@ -1,0 +1,77 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+#container {
+  position: relative;
+  color: #333;
+}
+#container #header {
+  width: 40%;
+  margin: auto;
+}
+#container #header h1 {
+  text-align: center;
+  font-size: 300%;
+}
+#container .section {
+  width: 100%;
+  min-height: 430px;
+  margin: 0;
+  padding: 1% 0;
+}
+#container .section.general {
+  min-height: 0;
+}
+#container .section.general .content {
+  color: #333;
+}
+#container .section .white {
+  color: white;
+}
+#container .section.extendedValidation {
+  background-color: #31cc81;
+}
+#container .section.standardValidation {
+  background-color: #29aae3;
+}
+#container .section.brokenCertificate {
+  background-color: #c879f2;
+}
+#container .section.insecureConnection {
+  background-color: #f08078;
+}
+#container .section .content {
+  width: 40%;
+  min-width: 500px;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+}
+#container .section .content img.screenshot {
+  width: 100%;
+  margin: auto;
+}
+#container .section .content h2 {
+  margin: 0;
+  text-align: center;
+}
+#container .section .content .text {
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#container .section .content .text .highlight {
+  font-weight: bold;
+}
+#container .clear {
+  clear: both;
+}
+#container .center {
+  text-align: center;
+}
+#container .left {
+  text-align: left;
+}

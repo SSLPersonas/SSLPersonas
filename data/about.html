@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>About SSLPersonas</title>
     <link rel="stylesheet" href="css/about.css" />
+    <script src="js/3rd-party/jquery-2.1.1.min.js"></script>
+    <script src="js/about.js"></script>
 </head>
 <body>
 <div id="container">
 
     <div class="section general">
         <div id="header" class="content">
+            <img src="img/icon/SSLPersonas-Icon-256.png" alt="SSLPersonas Icon" class="icon" />
             <h1>SSLPersonas</h1>
         </div>
         <div class="content">
@@ -31,38 +34,49 @@
                     and shown to you by using a particular theme.
                 </p>
                 <h3>
-                    What does secure even mean?
+                    What does 'secure' even mean?
                 </h3>
-                <p>
-                    Whenever you open a web page, you actually start a conversation
-                    with a computer that's located usually very far away from you.
-                    Your browser (Firefox) is able to tell whether this
-                    conversation is happening without anyone being able to listen
-                    (imagine the President's red phone).
-                    It does it by exchanging secrets with the remote machine,
-                    that only those two know. Those secrets are used
-                    to invent a new language that only your browser and
-                    the remote machine are able to speak. Now,
-                    If that's the case, we call that conversation secure.
-                </p>
-                <p>
-                    If your browser is not sure, whether there is anyone listening,
-                    the conversion is not secure. It then does not exchange
-                    any secrets with other computers, nor does it invent any
-                    languages together with them.
-                    Most of the time, this is just fine.
-                    But there are people out there who do want to know,
-                    what conversation you're having with other computers
-                    and they can quite easily listen to that.
-                    That is why we say, those conversations (or connections)
-                    are insecure.
-                </p>
-
-                <p>
-                    Please note: The process is a little bit more complicated
-                    that that in real life. We just try to explain it as
-                    simple as we can and don't worry about the terminology.
-                </p>
+                <div id="securityDescription">
+                    <p>
+                        Whenever you open a web page, you actually start a conversation
+                        with a computer that's located usually very far away from you.
+                        Your browser (Firefox) is able to tell whether this
+                        conversation is happening without anyone being able to listen
+                        (imagine the President's red phone).
+                    </p>
+                    <div class="short">
+                        <a href="#" class="readOn securityDescription">Read On</a>
+                    </div>
+                    <div class="long">
+                        <p>
+                            It does it by exchanging secrets with the remote machine,
+                            that only those two know. Those secrets are used
+                            to invent a new language that only your browser and
+                            the remote machine are able to speak. Now,
+                            If that's the case, we call that conversation secure.
+                        </p>
+                        <p>
+                            If your browser is not sure, whether there is anyone listening,
+                            the conversion is not secure. It then does not exchange
+                            any secrets with other computers, nor does it invent any
+                            languages together with them.
+                            Most of the time, this is just fine.
+                            But there are people out there who do want to know,
+                            what conversation you're having with other computers
+                            and they can quite easily listen to that.
+                            That is why we say, those conversations (or connections)
+                            are insecure.
+                        </p>
+                        <p>
+                            Please note: The process is a little bit more complicated
+                            that that in real life. We just try to explain it as
+                            simple as we can and don't worry about the terminology.
+                        </p>
+                        <p>
+                            <a href="" class="readOn securityDescription">Hide</a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
 
@@ -136,7 +150,17 @@
                     conversation are not secure. This can be a bad
                     thing, because you can't know whether the insecure
                     parts are the ones you actually want to keep
-                    secure. So, be <span class="highlight">somewhat cautious</span>
+                    secure.
+                </p>
+                <p>
+                    Further, it could mean that someone signed their
+                    own certificate. Everyone can do that, but
+                    the conversation your browser has with
+                    that website can't be understood by anyone
+                    else.
+                </p>
+                <p>
+                    So, be <span class="highlight">somewhat cautious</span>
                     about what you do on those sites, but in general it's nice
                     to see the site is trying to establish a
                     secure conversation with you.

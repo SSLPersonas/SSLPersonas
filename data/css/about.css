@@ -1,3 +1,15 @@
+a:link {
+  color: #29aae3;
+}
+a:visited {
+  color: #c879f2;
+}
+a:hover {
+  color: #31cc81;
+}
+a:active {
+  color: #f08078;
+}
 html,
 body {
   padding: 0;
@@ -27,6 +39,9 @@ body {
 }
 #container .section.general .content {
   color: #333;
+}
+#container .section.general #securityDescription .long {
+  display: none;
 }
 #container .section .white {
   color: white;

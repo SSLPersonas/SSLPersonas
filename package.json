@@ -1,9 +1,9 @@
 {
-  "name": "sslPersonas",
+  "name": "sslpersonas",
   "title": "SSLPersonas",
   "id": "sslPersonas@tobitobi.de",
   "description": "SSLPersonas changes Firefox's theme according to the security status of a website.",
   "author": "Tobi Stockinger",
   "license": "MIT",
-  "version": "2.0"
+  "version": "2.0.0"
 }

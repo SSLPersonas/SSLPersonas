@@ -5,5 +5,5 @@
   "description": "SSLPersonas changes Firefox's theme according to the security status of a website.",
   "author": "Tobi Stockinger",
   "license": "MIT",
-  "version": "2.0.0"
+  "version": "2.0.1"
 }

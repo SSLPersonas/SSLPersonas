@@ -32,6 +32,9 @@ In order to generate an installable Firefox JetPack Add-On (restartless), using 
     $ cfx run
 initializes a fresh browser instance. Only SSLPersonas is installed to test.
 
+    $ cfx run --profiledir /path/to/some/writable/directory
+lets you persist the themes etc.
+
 ### Packaging
 
     $ cfx xpi

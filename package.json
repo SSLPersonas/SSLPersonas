@@ -5,7 +5,7 @@
   "description": "SSLPersonas changes Firefox's theme according to the security status of a website.",
   "author": "Tobi Stockinger",
   "license": "MIT",
-  "version": "2.0.3",
+  "version": "2.1.0b",
   "icon": "data/img/icon/SSLPersonas-Icon-32.png",
   "icon64": "data/img/icon/SSLPersonas-Icon-64.png",
   "homepage":"https://sslpersonas.tobitobi.de"

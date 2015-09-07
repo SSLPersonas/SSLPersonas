@@ -1,0 +1,12 @@
+.DS_Store
+*.zip
+*.xpi
+.git
+.idea
+.gitignore
+.jpmignore
+*.md
+
+
+unpackagedResources
+test

@@ -5,8 +5,30 @@
   "description": "SSLPersonas changes Firefox's theme according to the security status of a website.",
   "author": "Tobi Stockinger",
   "license": "MIT",
-  "version": "2.1.0b",
+  "version": "2.2.0",
+  "main" : "lib/main.js",
   "icon": "data/img/icon/SSLPersonas-Icon-32.png",
   "icon64": "data/img/icon/SSLPersonas-Icon-64.png",
-  "homepage":"https://sslpersonas.tobitobi.de"
+  "homepage":"https://sslpersonas.tobitobi.de",
+  "preferences": [{
+    "name": "insecureTheme",
+    "title": "Theme for insecure pages",
+    "description": "Choose the theme for insecure pages (HTTP). Default: White",
+    "type": "radio",
+    "value": "white",
+    "options" : [
+      {
+        "value": "white",
+        "label": "White"
+      },
+      {
+        "value": "red",
+        "label": "Red"
+      },
+      {
+        "value": "default",
+        "label": "Default"
+      }
+    ]
+  }]
 }

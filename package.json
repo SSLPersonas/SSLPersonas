@@ -5,7 +5,7 @@
   "description": "SSLPersonas changes Firefox's theme according to the security status of a website.",
   "author": "Tobi Seitz",
   "license": "MIT",
-  "version": "2.3.0",
+  "version": "2.3.2",
   "main" : "lib/main.js",
   "icon": "data/img/icon/SSLPersonas-Icon-32.png",
   "icon64": "data/img/icon/SSLPersonas-Icon-64.png",
